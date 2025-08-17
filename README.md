@@ -145,3 +145,7 @@ Install with:
 ## License
 
 This project is for academic and research purposes only. Not intended for real-world medical diagnosis.
+
+## Author 
+- Ajay Tiwari 
+- B.Tech-Computer Science and Engineering (Artificial Intelligence): 2022-2026
