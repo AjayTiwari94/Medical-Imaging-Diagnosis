@@ -5,7 +5,11 @@
 - The project supports both **local deployment (Flask)** and **cloud-based demo (Gradio in Google Colab)**.
 
 ---
-
+## Dataset
+- Chest X-Ray Images (Pneumonia)- Available on Kaggle
+```bash
+https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+```
 ## Project Structure
    ```bash
     Medical Imaging/
