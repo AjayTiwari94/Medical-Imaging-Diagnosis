@@ -5,6 +5,12 @@
 - The project supports both **local deployment (Flask)** and **cloud-based demo (Gradio in Google Colab)**.
 
 ---
+##  Live Demo
+Try the medical imaging diagnosis system here:
+[AI Medical Imaging Diagnosis System — Hugging Face Space](https://huggingface.co/spaces/AjayTiwari94/AI-Medical-Imaging-Diagnosis-System)
+
+This app uses a CNN model to classify chest X-rays into "Normal" or "Pneumonia".
+
 ## Dataset
 - Chest X-Ray Images (Pneumonia)- Available on Kaggle
 ```bash
