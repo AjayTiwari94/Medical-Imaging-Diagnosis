@@ -6,7 +6,7 @@
 
 ---
 ##  Live Demo
-Try the medical imaging diagnosis system here:
+Try the Medical Imaging Diagnosis System here:
 [AI Medical Imaging Diagnosis System — Hugging Face Space](https://huggingface.co/spaces/AjayTiwari94/AI-Medical-Imaging-Diagnosis-System)
 
 This app uses a CNN model to classify chest X-rays into "Normal" or "Pneumonia".
