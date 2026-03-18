@@ -7,7 +7,7 @@ from tensorflow import keras
 import json
 
 # -------------------------
-# Config
+# Configuring the saved model
 # -------------------------
 MODEL_PATH = r"C:\Users\Neeraj Tiwari\Desktop\Medical Imaging\model\medical_cnn.h5"
 CLASS_MAP_PATH = r"C:\Users\Neeraj Tiwari\Desktop\Medical Imaging\model\class_indices.json"
@@ -23,7 +23,7 @@ def load_model_and_metadata():
     num_classes = output_shape[-1]
     in_h, in_w, in_c = input_shape[1], input_shape[2], input_shape[3]
 
-    # Try to load class map if present
+    # Trying to load class map if present
     if os.path.exists(CLASS_MAP_PATH):
         try:
             with open(CLASS_MAP_PATH, "r") as f:
@@ -51,7 +51,7 @@ def load_model_and_metadata():
 model, (IN_H, IN_W, IN_C), NUM_CLASSES, CLASS_NAMES = load_model_and_metadata()
 
 # -------------------------
-# Preprocess
+# Preprocessing
 # -------------------------
 def preprocess_image(pil_img):
     if IN_C == 1:
@@ -69,7 +69,7 @@ def preprocess_image(pil_img):
     return arr
 
 # -------------------------
-# Predict
+# Prediction
 # -------------------------
 def predict(img_batch):
     raw = model.predict(img_batch, verbose=0)
@@ -104,7 +104,7 @@ def predict_proba(img_batch):
         "Pneumonia": prob_pneumonia
     }
 
-# Define your class labels (order must match your training model)
+# Defining class labels (order must match our training model)
 CLASS_NAMES = ["Normal", "Pneumonia"]
 
 if uploaded_image:
